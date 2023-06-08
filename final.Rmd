@@ -105,7 +105,8 @@ Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'
 ```{r}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
+library(readr)
+adult_data <- read_csv(here("C:/Users/basak/OneDrive/Masaüstü/finalodevi/data/AnyConv.com__adult.data.csv"))
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
@@ -120,8 +121,8 @@ st_options(lang = "tr")
 `echo=FALSE` seçeneği ile kodların türetilen pdf dosyasında görünmesini engelleyin ve sonuçlarınızı tablo halinde rapor edin.
 
 ```{r results='asis', echo=FALSE}
-survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+adult_data %>%
+  select("capital gain", "hours per week", "race", "sex", "yearly income") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
@@ -143,7 +144,7 @@ Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. �
 
 
 ```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik'}
-survey %>% 
+adult_data %>% 
   ggplot(aes(x = handedness, y = handspan)) +
   geom_point() +
   geom_smooth() +
