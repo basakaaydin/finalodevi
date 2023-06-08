@@ -36,16 +36,6 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 [^1]: 21080560, [Github Repo](https://github.com/basakaaydin/finalodevi)
 
-# Final Hakkında Önemli Bilgiler
-
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
-
-**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
-
-**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
-
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
-
 # Giriş
 Yapmış olduğum bu çalışmada araştırma sorum yıllık gelirdeki değişimleri etkileyen
 faktörler nelerdir sorusuna dayanmaktadır.Bu sorudan yola çıkarak elde ettiğim sonuçların gelir üzerindeki etkisini incelemek ve veriyi analiz etmek projemin konusunu
@@ -54,8 +44,6 @@ gelirin 50.000$’ı aşıp aşmadığını incelemektedir.Veri setim toplam 14 
 gözlem içermektedir.Değişkenler age,workclass,fnlwgt,education,education-num,maritalstatus,occupation,relationship,race,sex,capital gain,capital loss,hours per week,native
 country’den oluşmaktadır.
  
-
-
 
 
 ## Çalışmanın Amacı
